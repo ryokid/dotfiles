@@ -1,0 +1,11 @@
+set nobackup
+set noundofile
+
+set transparency=0
+set guifont=Monaco:h13
+set lines=30 columns=100
+
+syntax enable
+set background=dark
+colorscheme darkblue
+

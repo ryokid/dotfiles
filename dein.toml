@@ -8,3 +8,5 @@ repo = 'scrooloose/nerdtree'
 repo = 'itchyny/lightline.vim'
 hook_add = "let g:lightline = { 'colorscheme' : 'landscape' }"
 
+[[plugins]]
+repo = 'Shougo/neocomplete'

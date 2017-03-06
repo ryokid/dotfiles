@@ -76,13 +76,3 @@ endif
 if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
-
-"---------------------------
-" Start Lightline Settings.
-"---------------------------
-
-let g:lightline = { 'colorscheme' : 'landscape' }
-
-"---------------------------
-" End Lightline Settings.
-"---------------------------

@@ -6,3 +6,5 @@ repo = 'scrooloose/nerdtree'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
+hook_add = "let g:lightline = { 'colorscheme' : 'landscape' }"
+

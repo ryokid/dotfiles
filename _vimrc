@@ -37,6 +37,8 @@ nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
 
+nnoremap <silent> <C-L> :noh<C-L><CR>
+
 nnoremap ; :
 nnoremap : ;
 

@@ -42,6 +42,13 @@ nnoremap <silent> <C-L> :noh<C-L><CR>
 nnoremap ; :
 nnoremap : ;
 
+nnoremap j gj
+nnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up>   gk
+nnoremap gj j
+nnoremap gk k
+
 if !&compatible
   set nocompatible
 endif

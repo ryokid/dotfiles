@@ -21,11 +21,6 @@ set tw=0
 set list listchars=tab:->
 syntax on
 
-"inoremap <C-j> <Down>
-"inoremap <C-k> <Up>
-"inoremap <C-h> <Left>
-"inoremap <C-l> <Right>
-
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'

@@ -10,3 +10,6 @@ hook_add = "let g:lightline = { 'colorscheme' : 'landscape' }"
 
 [[plugins]]
 repo = 'Shougo/neocomplete'
+
+[[plugins]]
+repo = 'simeji/winresizer'

@@ -2,14 +2,37 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+repo = 'Shougo/neocomplete'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+
+[[plugins]]
 repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'jistr/vim-nerdtree-tabs'
+hook_add = "let g:nerdtree_tabs_open_on_console_startup=1"
+
+[[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 hook_add = "let g:lightline = { 'colorscheme' : 'landscape' }"
 
 [[plugins]]
-repo = 'Shougo/neocomplete'
+repo = 'simeji/winresizer'
 
 [[plugins]]
-repo = 'simeji/winresizer'
+repo = 'neowit/vim-force.com'
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+
+[[plugins]]
+repo = 'kannokanno/previm'
+hook_add = "let g:previm_open_cmd = 'open -a /Applications/Google\ Chrome.app'"

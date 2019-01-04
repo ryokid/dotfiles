@@ -2,10 +2,14 @@ set nobackup
 set noundofile
 
 set transparency=0
-set guifont=Monaco:h13
-set lines=30 columns=70
+set guifont=Monaco:h12
+set lines=50 columns=150
 
 syntax enable
 set background=dark
 colorscheme darkblue
 
+set tabstop=4
+set autoindent
+set expandtab
+set shiftwidth=4

@@ -23,11 +23,13 @@ set tw=0
 set list listchars=tab:->
 syntax on
 
+set nofoldenable
+
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
-nmap <CR> i<CR><ESC>
+"nmap <CR> i<CR><ESC>
 
 nmap n nzz
 nmap N Nzz
@@ -41,8 +43,8 @@ nnoremap <silent> ]B :blast<CR>
 
 nnoremap <silent> <C-L> :noh<C-L><CR>
 
-nnoremap ; :
-nnoremap : ;
+"nnoremap ; :
+"nnoremap : ;
 
 nnoremap j gj
 nnoremap k gk
@@ -51,7 +53,7 @@ nnoremap <Up>   gk
 nnoremap gj j
 nnoremap gk k
 
-autocmd VimEnter * execute 'NERDTree'
+"autocmd VimEnter * execute 'NERDTree'
 
 "----- End of general settings -----"
 
@@ -66,6 +68,11 @@ endif
 " reset augroup
 augroup MyAutoCmd
 autocmd!
+augroup END
+
+augroup PrevimSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
 
 " Automatic installation of dein.vim.

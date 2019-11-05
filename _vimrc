@@ -97,3 +97,6 @@ if has('vim_starting') && dein#check_install()
 endif
 
 "----- End of settings for dein.vim -----"
+
+set term=xterm-256color
+syntax on

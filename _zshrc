@@ -1,0 +1,40 @@
+# Created by newuser for 5.6.2
+# zplug
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+# theme (https://github.com/sindresorhus/pure#zplug)　好みのスキーマをいれてくだされ。
+#zplug "themes/duellj", from:oh-my-zsh
+#zplug "themes/pygmalion", from:oh-my-zsh
+zplug "mafredri/zsh-async"
+zplug "sindresorhus/pure"
+# 構文のハイライト(https://github.com/zsh-users/zsh-syntax-highlighting)
+zplug "zsh-users/zsh-syntax-highlighting"
+# history関係
+zplug "zsh-users/zsh-history-substring-search"
+# タイプ補完
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-completions"
+zplug "chrissicool/zsh-256color"
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+  printf "Install? [y/N]: "
+  if read -q; then
+    echo; zplug install
+  fi
+fi
+# Then, source plugins and add commands to $PATH
+zplug load
+
+# alias
+alias l='ls -CFG'
+alias la='ls -laG'
+alias ls='ls -G'
+
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=/usr/local/var/nodebrew/current/bin:$PATH
+export PATH=~/.local/bin:$PATH
+
+eval "$(pyenv init -)"
+
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'

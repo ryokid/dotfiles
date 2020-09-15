@@ -3,11 +3,11 @@ set noundofile
 
 set transparency=0
 set guifont=Monaco:h12
-set lines=50 columns=150
+set lines=40 columns=100
 
 syntax enable
 set background=dark
-colorscheme darkblue
+colorscheme blue
 
 set tabstop=4
 set autoindent

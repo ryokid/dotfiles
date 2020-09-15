@@ -1,4 +1,4 @@
-"----- Start of general settings -----"
+"----- Start of general settings -----
 
 set number
 set title
@@ -55,11 +55,11 @@ nnoremap gk k
 
 "autocmd VimEnter * execute 'NERDTree'
 
-"----- End of general settings -----"
+"----- End of general settings -----
 
 
 
-"----- Start of settings for dein.vim -----"
+"----- Start of settings for dein.vim -----
 
 if !&compatible
   set nocompatible
@@ -96,7 +96,9 @@ if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
 
-"----- End of settings for dein.vim -----"
+"----- End of settings for dein.vim -----
 
 set term=xterm-256color
 syntax on
+
+command! Jqf %!jq '.'

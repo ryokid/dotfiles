@@ -25,6 +25,8 @@ syntax on
 
 set nofoldenable
 
+set clipboard=unnamed,autoselect
+
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
@@ -43,8 +45,8 @@ nnoremap <silent> ]B :blast<CR>
 
 nnoremap <silent> <C-L> :noh<C-L><CR>
 
-"nnoremap ; :
-"nnoremap : ;
+nnoremap ; :
+nnoremap : ;
 
 nnoremap j gj
 nnoremap k gk

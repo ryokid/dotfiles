@@ -81,3 +81,5 @@ export PATH=$PATH:$HOME/.poetry/bin
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /Users/ryokawana/terraform/terraform terraform
 export PATH=$PATH:~/terraform
+export PATH="/usr/local/opt/awscli@1/bin:$PATH"
+export PATH="/usr/local/opt/awscli@1/bin:$PATH"

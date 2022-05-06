@@ -1,0 +1,7 @@
+function scratch () {
+    vim --cmd 'cd ~/Scratches' ~/Scratches/`scratchf $1`
+}
+
+function scratchf () {
+    echo `date +%F``echo $1 | sed 's/^\(.\)/-\1/'`.md
+}
